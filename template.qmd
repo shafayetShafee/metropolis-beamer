@@ -1,0 +1,90 @@
+---
+title: Metropolis Beamer Theme for Revealjs
+subtitle: A theme inspired by [beamer metropolis theme](https://www.overleaf.com/latex/templates/metropolis-beamer-theme/qzyvdhrntfmr)
+format: 
+  metropolis-beamer-revealjs: default
+header-logo: reveal_logo.svg
+header-logo-link: "https://revealjs.com/"
+slide-number: true
+author:
+  - name: Author X
+    orcid: 0000-0000-0000-0000
+    email: author.x@email.com
+    affiliations: Institution X
+  - name: Author Y
+    orcid: 0000-0000-0000-0001
+    email: author.y@email.com
+    affiliations: Institution Y
+date: last-modified
+bibliography: references.bib
+embed-resources: true
+---
+
+# Components {background-color="#40666e"}
+
+## Components
+
+### Alert and Example Inline style
+
+To emphasize specific words or text, you can:
+
+- Use the default `.alert` class, e.g. [important note]{.alert}.
+- Use the default `.example` class e.g. [For example, look at this text]{.example}
+
+## Components
+
+### Custom Inline Color Attributes
+
+- Use inline `color` and `bg` attribute for custom color and background color, 
+    - `[colored text]{color="#2a74f5"}` produce [colored text]{color="#2a74f5"}
+    - `[text with background color]{bg="#f5e347"}` produce [text with background color]{bg="#f5e347"}
+    - `[colored text with background]{color="#2a74f5" bg="#f5e347"}` produce [colored text]{color="#2a74f5" bg="#f5e347"}
+- [Note that, when using inline attributes, DO NOT PUT SPACE on either side of equal (`=`) sign, that, write like `color="#2a74f5"`, instead of `color = "#2a74f5"`]{.alert}
+
+## Components
+
+### Blockquotes
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel rhoncus ante. Donec vitae euismod nibh. In ultrices vestibulum erat, non maximus orci elementum in. Ut eget erat et felis consequat volutpat. Donec ac iaculis justo. Phasellus vitae mi tempor leo scelerisque consequat sed at nibh.
+
+## Components
+
+### Citations
+
+1. @R-knitr
+
+2. @R-rmarkdown
+
+3. @R-quarto
+
+
+## Tables
+
+| fruit  | price  |
+|--------|--------|
+| apple  | 2.05   |
+| pear   | 1.37   |
+| orange | 3.09   |
+
+: Fruit prices {#tbl-markdown tbl-colwidths="[75,25]"}
+
+@tbl-markdown is created using markdown.
+
+## Tables
+
+```{r}
+#| label: tbl-co2
+#| tbl-cap: Carbon Dioxide Uptake in Grass Plants (Data from R)
+knitr::kable(head(CO2))
+```
+
+For details of @tbl-co2, check by running `?CO2` in R console.
+
+## Images
+
+![Random Image from Picsum](images/picsum.png)
+
+## References
+
+::: {#refs}
+:::

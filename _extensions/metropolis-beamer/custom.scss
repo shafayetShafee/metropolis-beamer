@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+@import "icon.scss";
+
+/*-- scss:defaults --*/
+
+$font-family-sans-serif:	"Fira Sans", Helvetica, sans-serif !default;
+$font-family-monospace:	"Source Code Pro", monospace !default;
+$presentation-h-font12:	"Yanone Kaffeesatz", sans-serif !default; 
+$presentation-h-font36: "Source Sans 3", sans-serif !default; 
+$presentation-font-size-root:	32px !default;
+$presentation-h1-font-size:	2.5em !default;
+$presentation-h2-font-size:	2em !default;
+$presentation-h3-font-size:	1.4em !default;
+$presentation-font-smaller:	0.7 !default;
+$presentation-line-height: 1.3 !default;
+$presentation-title-slide-text-align: left !default;
+$presentation-slide-text-align: left !default;
+$code-block-font-size: 0.60em !default;
+
+$primary-color: #33474b !default;
+$secondary-color: #EB811B !default;
+$header-bg-color: #23373b !default;
+$alert-color: #9c162a !default;
+$example-color: #14B03D !default;
+$body-bg: #f1f1f1 !default;
+$body-color: $primary-color !default; 
+$selection-bg-color: #26351C !default;
+$selection-fcolor: #fff !default;
+$dark-bg-code-color: $example-color !default;
+$link-color: $secondary-color !default;
+
+$titleSlide-line: solid !default;
+$h12-font-weight: 500 !default;
+$h36-font-weight: 400 !default;
+$cell-code-font-weight: normal !default;
+$body-font-weight: 300 !default;
+$authors-block-gap: 4em !default;
+
+/*-- scss:rules --*/
+
+.reveal {
+    font-weight: $body-font-weight !important;
+  
+  h1, h2 {
+    font-family: $presentation-h-font12;
+    font-weight: $h12-font-weight;
+  }
+  
+  h3, h4, h5, h6 {
+    font-family: $presentation-h-font36;
+    font-weight: $h36-font-weight;
+  }
+  
+  code {
+    font-weight: $cell-code-font-weight;
+  }
+  
+  strong {
+    font-weight: $h12-font-weight;
+  }
+  
+  blockquote {
+    margin-left: 1em;
+    
+    p {
+      padding: 5px;
+      line-height: 1.2;
+      color: lighten(#604c38, 20%);
+    }
+  }
+  
+  div.sourceCode {
+    margin-top: 15px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,.1);
+  }
+  
+  pre.sourceCode code {
+    padding-top: 8px;
+  }
+  
+  .alert { color: $alert-color; }
+  .example { color: $example-color; }
+  
+  ::selection {
+    color: $selection-fcolor;
+    background: $selection-bg-color;
+    text-shadow: none;
+  }
+  
+  .callout {
+    box-shadow: 0px 0px 6px rgba(0,0,0,.3);
+    border-radius: 8px;
+    
+    .callout-body {
+      font-weight: $body-font-weight !important;
+      border-radius: 8px;
+      
+      code {
+        font-size: 1.2em;
+      }
+      
+      .callout-title {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+  
+  section#references {
+    font-size: 0.8em;
+  }
+  
+  div.csl-entry {
+    margin-bottom: 1em;
+    font-weight: $cell-code-font-weight;
+    
+    span {
+      color: gray;
+    }
+  }
+  
+  div.csl-entry::before {
+    content: $book-icon;
+  }
+  
+  .institute,
+  .quarto-title-affiliation,
+  .quarto-title-author-email {
+    font-style: italic;
+  }
+  
+  .quarto-title-authors {
+    padding-top: 20px;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    border-top: 2px $titleSlide-line $secondary-color;
+  
+    .quarto-title-author {
+      padding-left: 0em !important;
+      padding-right: $authors-block-gap !important;
+      width: fit-content;
+    }
+  }
+  
+  .author,
+  .quarto-title-author-name {
+    color: $body-color;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  #title-slide .subtitle, 
+  div.reveal div.slides section.quarto-title-block .subtitle {
+    margin-bottom: 1.5rem;
+  }
+  
+  .slide-background.title-slide {
+    background-color: $primary-color;
+  }
+  
+  div.header-logo { 
+    grid-area: logo;
+  }
+
+  div.header-title { 
+    grid-area: ht;
+    padding-left: 60px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  
+  div.reveal-header {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-areas: "ht logo";
+    column-gap: 10px;
+    align-items: center;
+    top: -5px;
+    margin: 3.2px 0px 2px 0px;
+    width: 100%;
+    position: fixed;
+    background: $header-bg-color;
+    z-index: 5;
+    
+    .hedaer-title h2 {
+      color: #fff !important;
+    }
+  }
+  
+  
+  div.slides section:not(.title-slide):not(#title-slide):not(.stack) {
+    padding-top: 2em;
+    margin-top: 1.5em;
+    padding-bottom: 3em;
+  }
+
+  div.slides section.smaller:not(.title-slide):not(#title-slide):not(.stack) {
+    padding-top: 4em;
+    margin-top: 1.5em;
+    padding-bottom: 2em;
+  }
+
+  .header-logo img {
+    margin: 0px 0px 0px 0px;
+    padding-left: 3vw;
+    padding-top: 5px;
+    height: 100%;
+    width: auto;
+    max-width: max(80px, 20vw);
+    max-height: max(80px, 20vh);
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    padding: 12px;
+  }
+  
+  .cell-output-display {
+    max-height: 450px;
+    overflow-y: auto;
+  }
+  
+  .footer,
+  .slide-number {
+    color: #604c38;
+  }
+  
+  .slide aside {
+    bottom: 250px ;
+    color: #604c38;
+  }
+  
+  section[data-background-image] {
+    color: white;
+    
+    h1, h2, h3, h4, h5, h5 {
+      color: white;
+    }
+    
+    code {
+      color: $example-color;
+      filter: brightness(2);
+    }
+  }
+  
+  .progress {
+	  background-color: transparent;
+	  color: $example-color;
+  }
+  
+  // tables
+  .slides table {
+    
+    margin-bottom: 0.80em;
+    border-top: 2px solid lighten(#505453, 5%);
+    border-bottom: 2px solid lighten(#505453, 5%);
+    
+    th, td {
+      border: none;
+      padding: 0.20em;
+      font-size: 0.90em;
+    }
+    
+    thead th {
+      font-weight: normal;
+    }
+    
+    thead th,
+    tr:last-child td {
+      border-bottom: 1px solid lighten(#505453, 10%);
+    }
+    
+  }
+  
+  .slide {
+    figure>figcaption {
+      font-size: 0.80em;
+    }
+  }
+}
+
+figure.quarto-float-tbl figcaption.quarto-float-caption-top {
+  margin-bottom: 1rem;
+}

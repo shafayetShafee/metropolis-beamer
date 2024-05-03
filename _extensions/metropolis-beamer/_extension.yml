@@ -1,0 +1,13 @@
+title: Metropolis-beamer
+author: shafayetShafee
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    revealjs:
+      date-format: long
+      theme: [simple, custom.scss]
+      filters: 
+        - metropolis-header.lua
+
+
