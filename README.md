@@ -2,6 +2,8 @@
 
 This is a Quarto custom format to use a revealjs theme directly inspired by the [Beamer Metropolis theme](https://www.overleaf.com/latex/templates/metropolis-beamer-theme/qzyvdhrntfmr).
 
+[`View live demo`](https://shafayetshafee.github.io/metropolis-beamer/template.html)
+
 ## Installing
 
 :warning: This extension requires Quarto version to be at least 1.4.
