@@ -9,5 +9,6 @@ contributes:
       theme: [simple, custom.scss]
       filters: 
         - metropolis-header.lua
+        - custom-block.lua
 
 

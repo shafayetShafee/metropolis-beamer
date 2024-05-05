@@ -29,7 +29,11 @@ local function ensureHtmlDeps()
     name = "metropolis-beamer",
     version = "1.0.0",
     scripts = {
-        { path = "resources/js/add_header.js", attribs = {defer = "true"}}
+        { 
+          path = "resources/js/add_header.js", 
+          attribs = {defer = "true"},
+          afterBody = true
+        }
       }
   })
 end

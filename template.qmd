@@ -5,7 +5,7 @@ format:
   metropolis-beamer-revealjs: default
 header-logo: reveal_logo.svg
 header-logo-link: "https://revealjs.com/"
-slide-number: true
+slide-number: "c"
 author:
   - name: Author X
     orcid: 0000-0000-0000-0000
@@ -57,6 +57,74 @@ To emphasize specific words or text, you can:
 
 3. @R-quarto
 
+# Callout Blocks
+
+## Custom Blocks
+
+There are three custom blocks that you can use. Create them using `.callout` class in a div (`:::`) and specify the type.
+
+- For default block, use `type='default'`
+
+- For alert block, use `type='alert'`
+
+- For example block, use `type='example'`
+
+## Default block
+
+```{.markdown}
+::: {.callout type='default'}
+## Default block
+
+This is a default block
+:::
+```
+
+renders to,
+
+::: {.callout type='default'}
+## Default block
+
+This is a default block
+:::
+
+## Alert Block
+
+```{.markdown}
+::: {.callout type='alert'}
+## Alert Block
+
+This is a alert block
+:::
+```
+
+renders to, 
+
+::: {.callout type='alert'}
+## Alert Block
+
+This is a alert block
+:::
+
+
+## Example Block
+
+```{.markdown}
+::: {.callout type='example'}
+## Example Block
+
+This is a example block
+:::
+```
+
+renders to,
+
+::: {.callout type='example'}
+## Example Block
+
+This is a example block
+:::
+
+
 
 ## Tables
 
@@ -88,3 +156,4 @@ For details of @tbl-co2, check by running `?CO2` in R console.
 
 ::: {#refs}
 :::
+

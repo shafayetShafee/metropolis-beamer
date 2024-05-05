@@ -285,3 +285,37 @@ $authors-block-gap: 4em !default;
 figure.quarto-float-tbl figcaption.quarto-float-caption-top {
   margin-bottom: 1rem;
 }
+
+
+div[type="default"],
+div[type="example"],
+div[type="alert"] {
+  
+  .callout {
+     border-radius: 0px;
+     box-shadow: 0px 0px 6px rgba(0, 0, 0, .05);
+  }
+  .callout.callout-style-default {
+     border-left: 1px solid;
+  }
+  
+  div.callout-note {
+     border-left-color: silver !important;
+  }
+  
+  div.callout-note.callout-style-default .callout-title {
+     background-color: #bebebe;
+  }
+}
+
+div[type="example"] {
+  div.callout-note.callout-style-default .callout-title {
+     color: $example-color;
+  }
+}
+
+div[type="alert"] {
+  div.callout-note.callout-style-default .callout-title {
+     color: $alert-color;
+  }
+}
