@@ -3,7 +3,7 @@ title: Metropolis Beamer Theme for Revealjs
 subtitle: A theme inspired by [beamer metropolis theme](https://www.overleaf.com/latex/templates/metropolis-beamer-theme/qzyvdhrntfmr)
 format: 
   metropolis-beamer-revealjs: default
-header-logo: reveal_logo.svg
+header-logo: rstudio.png
 header-logo-link: "https://revealjs.com/"
 slide-number: "c"
 author:
@@ -17,7 +17,7 @@ author:
     affiliations: Institution Y
 date: last-modified
 bibliography: references.bib
-embed-resources: true
+# embed-resources: true
 ---
 
 # Components {background-color="#40666e"}

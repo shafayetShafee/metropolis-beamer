@@ -19,7 +19,7 @@ function header() {
     header_title_p_placeholder.replaceWith(header_title_h2_placeholder);
     
     logo_img = document.querySelector('.header-logo > img');
-    if (logo_img.getAttribute('src') == null) {
+    if (logo_img?.getAttribute('src') == null) {
       if (logo_img?.getAttribute('data-src') != null) {
         logo_img.src = logo_img?.getAttribute('data-src') || "";
         logo_img.removeAttribute('data-src'); 
@@ -89,7 +89,7 @@ function header() {
       const footer_logo_link = get_clean_attrs(header_logo, 'data-footer-logo-link');
       
       if (header_logo_link != null) {
-        const header_logo_img = document.querySelector('div.header-logo img');
+        const header_logo_img = document.querySelector('div.header-logo').firstElementChild;
         linkify_logo(header_logo_img, header_logo_link);
       };
       

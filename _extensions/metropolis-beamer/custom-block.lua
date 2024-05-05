@@ -23,7 +23,6 @@ SOFTWARE.
 ]]--
 
 local str = pandoc.utils.stringify
-local p = quarto.log.output
 
 if quarto.doc.is_format('revealjs') then
   function Callout(el)

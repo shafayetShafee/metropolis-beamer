@@ -89,7 +89,7 @@ $authors-block-gap: 4em !default;
   }
   
   .callout {
-    box-shadow: 0px 0px 6px rgba(0,0,0,.3);
+    box-shadow: 0px 0px 6px rgba(0,0,0,.1);
     border-radius: 8px;
     
     .callout-body {
@@ -173,7 +173,7 @@ $authors-block-gap: 4em !default;
   
   div.reveal-header {
     display: grid;
-    grid-template-columns: 3fr 0.5fr;
+    grid-template-columns: 3fr 0.35fr;
     grid-template-areas: "ht logo";
     column-gap: 10px;
     align-items: center;
@@ -202,14 +202,16 @@ $authors-block-gap: 4em !default;
     padding-bottom: 2em;
   }
 
-  .header-logo img {
+  .header-logo img,
+  .header-logo svg{
     margin: 0px 0px 0px 0px;
     padding-left: 3vw;
-    padding-top: 5px;
+    padding-right: 18px;
+    padding-top: 12px;
     height: 100%;
     width: auto;
-    max-width: max(80px, 20vw);
-    max-height: max(80px, 20vh);
+    max-width: max(80px, 12vw);
+    max-height: max(80px, 12vh);
   }
 
   img {
