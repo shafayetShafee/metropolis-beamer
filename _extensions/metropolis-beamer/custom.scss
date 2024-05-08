@@ -18,13 +18,15 @@ $presentation-title-slide-text-align: left !default;
 $presentation-slide-text-align: left !default;
 $code-block-font-size: 0.60em !default;
 
-$primary-color: #33474b !default;
+$primary-color: #23373b !default;
 $secondary-color: #EB811B !default;
-$header-bg-color: #23373b !default;
+$body-fg-color: #33474b !default;
 $alert-color: #9c162a !default;
 $example-color: #14B03D !default;
 $body-bg: #f1f1f1 !default;
-$body-color: $primary-color !default; 
+$body-color: $body-fg-color !default; 
+
+$header-bg-color: $primary-color !default;
 $selection-bg-color: #26351C !default;
 $selection-fcolor: #fff !default;
 $dark-bg-code-color: $example-color !default;
@@ -250,7 +252,7 @@ $authors-block-gap: 4em !default;
   
   .progress {
 	  background-color: transparent;
-	  color: $example-color;
+	  color: $secondary-color;
   }
   
   // tables

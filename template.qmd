@@ -3,6 +3,7 @@ title: Metropolis Beamer Theme for Revealjs
 subtitle: A theme inspired by [beamer metropolis theme](https://www.overleaf.com/latex/templates/metropolis-beamer-theme/qzyvdhrntfmr)
 format: 
   metropolis-beamer-revealjs: default
+    # theme: style.scss
 header-logo: rstudio.png
 header-logo-link: "https://posit.co/"
 slide-number: "c"
@@ -20,7 +21,7 @@ bibliography: references.bib
 embed-resources: true
 ---
 
-# Components {background-color="#40666e"}
+# Components 
 
 ## Components
 
