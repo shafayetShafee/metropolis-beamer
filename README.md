@@ -40,7 +40,7 @@ quarto add shafayetShafee/metropolis-beamer
 
 Simply use the format `metropolis-beamer-revealjs`,
 
-```
+``` yaml
 ---
 format: metropolis-beamer-revealjs
 ---
