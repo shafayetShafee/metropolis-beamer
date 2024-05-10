@@ -4,7 +4,7 @@ subtitle: A theme inspired by [beamer metropolis theme](https://www.overleaf.com
 format: 
   metropolis-beamer-revealjs: default
     # theme: style.scss
-header-logo: rstudio.png
+header-logo: images/rstudio.png
 header-logo-link: "https://posit.co/"
 slide-number: "c"
 author:

@@ -2,6 +2,18 @@
 
 This is a Quarto custom format to use a revealjs theme directly inspired by the [Beamer Metropolis theme](https://www.overleaf.com/latex/templates/metropolis-beamer-theme/qzyvdhrntfmr).
 
+
+<table>
+  <tr>
+    <td valign="top"><img src="screenshots/slide-title.png"></td>
+    <td valign="top"><img src="screenshots/slide-comp.png"></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="screenshots/slide-table.png"></td>
+    <td valign="top"><img src="screenshots/slide-ref.png"></td>
+  </tr>
+</table>
+
 [`View live demo`](https://shafayetshafee.github.io/metropolis-beamer/template.html)
 
 ## Installing
