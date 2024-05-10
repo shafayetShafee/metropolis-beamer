@@ -72,7 +72,21 @@ format:
 ... other options ...
 ```
 
-[`View how the slides look now`](https://shafayetshafee.github.io/metropolis-beamer/template-changed-style.html)
+The slides looks like this now,
+
+<table>
+  <tr>
+    <td valign="top"><img src="screenshots/slide-title-blue.png"></td>
+    <td valign="top"><img src="screenshots/slide-comp-blue.png"></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="screenshots/slide-table-blue.png"></td>
+    <td valign="top"><img src="screenshots/slide-ref-blue.png"></td>
+  </tr>
+</table>
+
+
+[`View how the slides look now (live)`](https://shafayetshafee.github.io/metropolis-beamer/template-changed-style.html)
 
 
 | Sass Variables          | Descriptions                                                                      |
