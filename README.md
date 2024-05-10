@@ -67,7 +67,7 @@ $primary-color: #0c2344;
 ``` yaml
 ... other options ...
 format: 
-  metropolis-beamer-revealjs: default
+  metropolis-beamer-revealjs: 
     theme: style.scss
 ... other options ...
 ```
